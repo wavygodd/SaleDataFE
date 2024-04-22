@@ -1,0 +1,27 @@
+<table>
+    <thead>
+      <tr>
+        <th>Transaction Key</th>
+        <th>Transaction Date</th>
+        <th>GUID</th>
+        <th>Ticket Number</th>
+        <th>Location Name</th>
+        <th>Device Name</th>
+        <th>Cashier Name</th>
+        <th>Customer Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let sale of salesData">
+        <td>{{ sale.transactionKey }}</td>
+        <td>{{ sale.transactionDate }}</td>
+        <td>{{ sale.guid }}</td>
+        <td>{{ sale.ticketNumber }}</td>
+        <td>{{ sale.locationName }}</td>
+        <td>{{ sale.deviceName }}</td>
+        <td>{{ sale.cashierName }}</td>
+        <td>{{ sale.customerName }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
